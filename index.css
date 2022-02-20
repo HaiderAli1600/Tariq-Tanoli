@@ -1,0 +1,237 @@
+/* CSS Document */
+* { margin:0 auto; box-sizing: border-box;;}
+#main {border-style:none; border-color:#F00; background:#000; position: fixed;
+  top: 0; width:1015px; overflow: hidden; width:100%;}
+#main ul {list-style-type:none; display:inline-flex; float:right; line-height:60px;}
+#main ul li {padding-right:23px;}
+#main a {text-decoration:none; color:#FFF; font-family:Arial, Helvetica, sans-serif;}
+#con:hover {color:rgb(255, 190, 27); font-weight:bold;}
+#lo:hover {color:rgb(255, 190, 27); font-weight:bold;}
+#sin:hover {color: rgb(255, 190, 27); font-weight:bold;}
+#main input[type=search] {float:right; padding:6px; border:none; margin-top:15px; margin-right:47.5px;font-size:17px; width:410px; height:35px; border-radius:5px;}
+#con {font-weight:bolder;}
+#lo {font-weight:bolder;}
+#sin {font-weight:bolder;}
+#hom {font-weight:bolder;}
+#main input[type=search]:hover {box-shadow:1px 1px 1px 1px rgb(255, 190, 27);} 
+#mainn {width:auto; height:auto; /*overflow:hidden;*/}
+/*<!--body {background-color: beige;}-->*/
+
+   
+#icon{background-color:rgb(255, 190, 27); cursor:pointer; float:right; margin-left:100px; position: relative; left: 488.5px; top: 15px; height:34.5px; text-align:center; width:38px; border-radius: 5px;
+position:absolute;}
+   
+
+
+#hom {border:5px solid; background:rgb(255, 190, 27); border-radius:3px; border-color:rgb(255, 190, 27); font-weight:bolder;}
+
+/*#imge {width:1350px; height:500px; background-size:100% 100%; margin:10px 10px 10px 10px;}*/
+
+
+.coon{height: 390px; width: 1000px; overflow: hidden; box-shadow: 1px 1px 15px rgba(0,0,0,0.4); margin-top:73px; /*background-color:#FFF;*/}
+
+.coon .act{height: 100%; width: 100%;}
+
+.soo{height: 100%; width: 100%;}
+
+
+.column {background-color: aliceblue;}
+
+
+#row::after {content: ""; clear: both; display: table;}
+
+.row {margin-top:25px; width:995px; height:275px; background-color: white;}
+
+.imgs {width:147.8px; height:100px; background-size:100% 100%; float:left; margin-bottom:2px; margin-top:10px; margin-left:4px; margin-right:7px; }
+
+h2 {}
+
+.cons {width:147.8px; height:100px; }
+
+.price {
+  color: rgb(255, 190, 27) ; font-weight: bolder; font-size: 22px; padding-top: 2px;   }
+
+.column {width: 155px; height:185px ; float:left; text-align:start; margin-right:10.8px; margin-top: 10px;}
+.column p {padding-left:12px;}
+
+.column:hover {box-shadow: darkgray 2px 2px 2px 2px ;}
+
+.dis del {color: gray; font-size:15px;}
+.dis del p {font-size:0px;}
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+/* body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+} */
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.footer{
+	max-width: 1170px;
+	margin:auto; width:1007.4px; height:260px; margin-top:180px;
+	
+}
+.footer{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: black;
+    padding: 70px 0; 
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px; 
+}
+.footer-col h4{
+	font-size: 18px;
+	color:rgb(255, 190, 27);
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color:rgb(255, 190, 27);
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: rgb(255, 190, 27);
+	background-color: #ffffff;
+}
+
+responsive
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+	
+	
+
+
+.social-links a {padding-top: 10px;}
+
+/* .footer:hover {box-shadow: rgb(255, 190, 27) 9px 9px 9px 9px ;} */
+	
+	
+	
+	
+	
+/*	*{
+  margin: 0;
+  padding: 0;
+}
+.loader{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #FFF;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.disppear{
+  animation: vanish 1s forwards;
+}
+@keyframes vanish {
+  100%{
+    opacity: 0s;
+    visibility: hidden;
+  }
+}
+*/
+
+
+
+  .loader{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #FFF;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; /*background-image:url(../../../../../Downloads/tht%20lo.png); background-repeat:no-repeat; background-position:center; background-size:120px; ba*/
+
+}
+
+.disppear{
+
+  animation: vanish 3s forwards;
+  animation-timing-function:linear;
+ 
+}
+@keyframes vanish {
+  100%{
+
+    visibility: hidden;
+  }
+}
+
+#load {width:650px; height:150px;}

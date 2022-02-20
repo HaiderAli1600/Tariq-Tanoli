@@ -1,0 +1,598 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+</head>
+<title>THT/login/.com</title>
+
+<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!--<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">-->
+
+<style>
+		
+* { margin:0 auto; box-sizing: border-box;}
+#main {border-style:none; background:#000; position: fixed;
+  top: 0; width:1015px; overflow: hidden; }
+#main ul {list-style-type:none; display:inline-flex; float:right; line-height:60px;}
+#main ul li {padding-right:23px;}
+#main a {text-decoration:none; color:#FFF; font-family:Arial, Helvetica, sans-serif;}
+#con:hover {color:rgb(255, 190, 27); font-weight:bold;}
+#sin:hover {color:rgb(255, 190, 27); font-weight:bold;}
+#hom:hover {color: rgb(255, 190, 27); font-weight:bold;}
+#main input[type=search] {float:right; padding:6px; border:none; margin-top:15px; margin-right:56px;font-size:17px; width:410px; height:35px; border-radius:5px;}
+#con {font-weight:bolder;}
+#lo {font-weight:bolder;}
+#hom {font-weight:bolder;}
+#sin {font-weight:bolder;}
+#main input[type=search]:hover {box-shadow:1px 1px 1px 1px rgb(255, 190, 27);} 
+#mainn {width:auto; height:auto;}
+/*<!--body {background-color: beige;}-->*/
+
+   
+#icon{background-color:rgb(255, 190, 27); cursor:pointer; float:right; margin-left:100px; position: relative; left: 488.5px; top: 15px; height:35px; text-align:center; width:38px; border-radius: 5px;
+position:absolute;}
+   
+#lo {border:5px solid; background-color: rgb(255, 190, 27); border-radius:3px; border-color:rgb(255, 190, 27); font-weight:bolder;}
+
+
+
+
+
+
+		
+.logen{position: ; top:50%; left:50%;  padding: 40px; color: white; font-family: Arial, Helvetica, sans-serif; background-color:#000; border-radius: 5px; display: flex; flex-direction: column; align-items: center; margin: 40px 0; width: 500px; box-shadow: 1px 1px 1px 1px rgb(255, 190, 27); display:flex; flex-direction: column; align-items: center; margin:10px 0; margin-top:100px; margin-left:auto; margin-right:auto; font-style: italic;}
+
+.logen  header{margin-bottom: 25px; margin: 0 0 25px 0;}
+
+.tht{position:; width: 80px; top:50%; border-radius: 50%; height: 80px;}
+
+.field{border: 1px solid rgb(255, 190, 27); border-radius: 50px; background-color: transparent; width: 100%; margin-bottom: 15px; display: flex; }
+
+.field span{color: white; width: 40px; line-height: 45px; text-align: center;}
+
+.field input{width: 100%; height: 45px; font-size: 1.1rem; padding: 5px; color: white; background-color: transparent; border: none;}
+
+.forgot-password {width: 100%; margin-bottom: 15px; }
+
+.forgot-password a{color:rgb(18, 190, 190); text-decoration: none; text-shadow: 2px 2px 2px rgb(105, 77, 5); }
+
+.forgot-password a:hover{ text-decoration: underline;}
+
+.submit{display: flex; justify-content: center; width: 100%; height: 45px; margin-bottom: 25px; font-family: Arial, Helvetica, sans-serif; font-size: 1.2rem; color:rgb(255, 190, 27); background-color: transparent; border: 1px solid rgb(255, 190, 27); border-radius: 125px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-style: italic; font-weight: 500; text-shadow: 2px 2px 2px rgb(105, 77, 5);}
+
+.submit:hover{cursor: pointer; background-color: rgb(255, 190, 27); color: white;}
+
+.login-form-copy {margin-bottom: 15px; color: rgb(255, 190, 27); text-shadow: 2px 2px 2px rgb(105, 77, 5);}
+
+.login-form_sign-up {text-decoration: none; color: rgb(18, 190, 190);}
+
+.social-icons{display: flex; width: 100%; justify-content: space-between; padding-bottom: 5px;}
+
+.social-icon{display: flex; align-items: center; justify-content: center; font-size: 1.4rem; width: 50px; height: 50px; border-radius: 50%; cursor: pointer; margin-bottom: 25px;}
+
+.facebook  {background-color: #385998; color:#FFF; }
+
+.instagram{background: linear-gradient(rgb(243,5,171),rgb(205,95,4),yellow);}
+
+.twitter{background-color: #00ACEE;}
+
+.google{background-color: #CA3224;}
+
+.linkedin{background-color: #0E76AB;}
+
+input:focus,input:hover,input:active {outline: none;}
+
+h2 {/*margin-top:90px; margin-left:280px; font-size:32px;*/ color: rgb(255, 190, 27); text-shadow: 2px 2px 2px rgb(105, 77, 5); margin-bottom: 30px;}
+
+.field ::placeholder {text-shadow: 1px 1px 1px white;}
+
+.facebook a {color: white;}
+.google a {color: white;}
+.instagram a {color: white;}
+.twitter a {color: white;}
+.linkedin a {color: white;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+/* body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+} */
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.footer{
+	max-width: 1170px;
+	margin:auto; width:1007.4px; height:260px; margin-top:35px;
+}
+.footer{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: black;
+    padding: 70px 0; 
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px; 
+}
+.footer-col h4{
+	font-size: 18px;
+	color:rgb(255, 190, 27);
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color:rgb(255, 190, 27);
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: rgb(255, 190, 27);
+	background-color: #ffffff;
+}
+
+responsive
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+	
+	
+
+
+.social-links a {padding-top: 10px;}
+
+/* .footer:hover {box-shadow: rgb(255, 190, 27) 9px 9px 9px 9px ;} */
+
+
+
+
+
+
+  .loader{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #FFF;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;/* background-image:url(../../../../../Downloads/tht%20lo.png); background-repeat:no-repeat; background-position:center; background-size:120px;
+*/
+}
+
+.disppear{
+
+  animation: vanish 2s forwards;
+  animation-timing-function:linear;
+ 
+}
+@keyframes vanish {
+  100%{
+
+    visibility: hidden;
+  }
+}
+
+#load {width:650px; height:150px;}
+
+
+
+
+
+.selectnone {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent; 
+}
+
+button{
+/*  width: 150px;
+  height: 50px;*/
+  background: none;
+/*  border: 2px solid ;*/
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .4s;  width:400px;  width: 100%; height: 45px; margin-bottom: 25px; color:rgb(255, 190, 27); background-color: transparent; border: 1px solid rgb(255, 190, 27); border-radius: 125px; 
+}
+
+/*button:hover {
+  width: 170px;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.4);
+}*/
+
+.s, svg {
+  position: absolute;
+  color: color: rgb(255, 190, 27);
+  fill: transparent;
+  transition: .4s; 
+}
+
+button:hover {cursor: pointer; background-color: rgb(255, 190, 27); color: white; font-style:italic; }
+
+button:hover span {
+  transition: .4s;
+  font-size: 16px; color: white; text-shadow: 1px 1px 1px white; font-weight:500px;
+}
+
+/*button:focus {
+  outline: none;
+  box-shadow: none;
+  border: 2px solid transparent;
+  width: 50px;
+  border-left: 2px solid rgb(255, 190, 27);
+  border-bottom: 2px solid rgb(255, 190, 27);
+  animation: spin 2s 500ms forwards;  
+}
+
+b*//*utton:focus span {
+  color: transparent;
+}
+
+button:focus svg {
+  animation: check 500ms 2300ms forwards;
+}
+
+@keyframes spin {
+  80% {
+    border: 2px solid transparent;
+    border-left: 2px solid rgb(255, 190, 27);
+  }
+  100% {
+    transform: rotate(1080deg);
+    border: 2px solid rgb(255, 190, 27);
+  }*/
+/*}
+
+@keyframes check {
+  to {
+    fill: rgb(255, 190, 27);
+  }
+}
+
+@keyframes circle {
+  to {
+    border: 2px solid rgb(255, 190, 27);
+  }
+}*/
+
+
+
+.s a {text-decoration:none; color:rgb(255, 190, 27);}
+.s a:hover {text-decoration:none; color:#FFF;}
+
+</style>
+
+
+
+        
+</head>
+    
+<body>
+    
+<div id="mainn">
+<div id="main">
+
+<header>
+ 
+<img src="../THT Image/tht lo.png" width="100px" />
+        
+         
+        
+<ul>
+        
+<li> <a href="pr.html" id="lo"> Login </a> </li>
+<li> <a href="THT Form.html" id="sin"> Sing-up </a>  </li>
+<li> <a href="index.html." id="hom"> Home </a> </li>
+<li> <a href="THT Contact.html" id="con"> Contact us </a> </li>
+        
+</ul>
+        
+        
+        
+<input type="search" id="search" placeholder="Search in THT" id="search-text-input"/>
+        
+<span><img src="../THT Image/icon-removebg-preview.png" id="icon" /></span>
+
+</header>
+</div>
+
+
+
+  <div class="loader">
+      <img src="https://forums.gameex.com/forums/uploads/monthly_2019_10/1795089751_VisualPinball.gif.922c8b0cd4b3f537d40ed63ddc7c0644.gif" alt="" id="load">
+    </div>
+</div>   
+    
+    
+    
+    
+    
+    
+    
+<!-- <h2> Welcome to THT! Please login. </h2> -->
+<form action="" class="logen">
+
+<header>
+
+<img src="tht lo.png" class="tht">
+
+</header>
+<h2> Welcome to THT! Please login. </h2>
+
+<div class="field">
+<span class="fa fa-user"></span>
+<input type="email" placeholder="Email or Phone Number" required="required">
+</div>
+
+
+
+
+<div class="field">
+<span class="fa fa-lock"></span>
+<input type="password" placeholder="Password" required="required">
+</div>
+
+
+
+
+
+<div class="forgot-password">
+<a href="">Forgot password?</a>
+</div>
+
+
+
+
+<!--<input type="submit" class="submit" value="LOGIN">-->
+<button class="selectnone">
+    
+    
+      <span class="s" style="font-size:16px; font-style:italic; font-weight:bolder; position:static;"> <a href="THT Web.html">LOGIN </a></span>
+      
+      
+      
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M0 11c2.761.575 6.312 1.688 9 3.438 3.157-4.23 8.828-8.187 15-11.438-5.861 5.775-10.711 12.328-14 18.917-2.651-3.766-5.547-7.271-10-10.917z"/>
+      </svg>
+      
+      
+      
+      
+    </button>
+
+            
+<span class="login-form-copy">Or Login with</span>
+
+
+<div class="social-icons">
+  
+
+<div class="social-icon instagram">
+<a href="https://www.instagram.com/"> 
+<span class="fa fa-instagram"></span>
+</a>
+</div>
+
+
+
+<div class="social-icon facebook">
+<a href="https://www.facebook.com/login">
+<span class="fa fa-facebook"></span>
+</a>
+</div>
+
+
+
+<div class="social-icon google">
+<a href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?redirect_uri=storagerelay%3A%2F%2Fhttps%2Fmember.daraz.pk%3Fid%3Dauth110901&response_type=code%20permission%20id_token&scope=profile%20email%20openid&openid.realm&include_granted_scopes=true&client_id=1085084897990-pfaol56mie2i1053gmgua77sooj4t68d.apps.googleusercontent.com&ss_domain=https%3A%2F%2Fmember.daraz.pk&access_type=offline&prompt=consent&origin=https%3A%2F%2Fmember.daraz.pk&gsiwebsdk=2&flowName=GeneralOAuthFlow">  
+<span class="fa fa-google"></span>
+</a>
+</div> 
+
+
+
+
+
+<div class="social-icon linkedin">
+<a href="https://www.linkedin.com/login">
+<span class="fa fa-linkedin"></span>
+</a>
+</div>
+
+
+
+
+<div class="social-icon twitter">
+<a href="https://twitter.com/login">
+<span class="fa fa-twitter"></span>
+</a>
+</div>
+
+
+</div>
+
+
+
+<span class="login-form-copy">Don't have an account?
+<a href="THT Form.html" class="login-form_sign-up" id="submit">Sign up</a>
+</span>
+
+
+
+
+
+
+
+</form>   
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     <footer class="footer">
+
+<!--      <div class="footer-container">-->
+      
+<!--      <div class="footer-row">-->
+      
+      <div class="footer-col">
+                 
+      <h4>company</h4>
+      <ul>
+      <li><a href="#">about us</a></li>
+      <li><a href="#">our services</a></li>
+      <li><a href="#">privacy policy</a></li>
+      <li><a href="#">affiliate program</a></li>
+      </ul>
+      </div>
+      
+      
+      
+      
+      
+      <div class="footer-col">
+      
+      <h4>get help</h4>
+      <ul>
+      <li><a href="#">FAQ</a></li>
+      <li><a href="#">shipping</a></li>
+      <li><a href="#">returns</a></li>
+      <li><a href="#">order status</a></li>
+      <li><a href="#">payment options</a></li>
+      </ul>
+      </div>
+      
+      
+      
+      
+      <div class="footer-col">
+      <h4>online shop</h4>
+      <ul>
+      <li><a href="#">watch</a></li>
+      <li><a href="#">bag</a></li>
+      <li><a href="#">shoes</a></li>
+      <li><a href="#">dress</a></li>
+      </ul>
+      </div>
+      
+      
+      
+      
+      
+      <div class="footer-col">
+      <h4>follow us</h4>
+      <div class="social-links">
+      <a href="#"><span class="fa fa-facebook"></span></a>
+      <a href="#"><span class="fa fa-google"></span></a>
+      <a href="#"><span class="fa fa-linkedin"></span></a>
+      <a href="#"><span class="fa fa-twitter"></span></a>
+      </div>
+      
+      
+      </div>
+<!--      </div>-->
+ <!--     </div>-->
+      
+      </footer>
+    
+    
+    
+    
+    
+    
+    
+    
+          
+<!--      <div class="footer-col">
+      <h4>follow us</h4>
+      <div class="social-links">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>-->
+      
+    
+    
+<script src="login JA.js" language="javascript"></script>
+</body>
+</html>

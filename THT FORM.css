@@ -1,0 +1,390 @@
+@charset "utf-8";
+/* CSS Document */
+* { margin:0 auto; box-sizing: border-box;}
+#main {border-style:none; background:#000; position: fixed;
+  top: 0; width:1015px; overflow: hidden; }
+#main ul {list-style-type:none; display:inline-flex; float:right; line-height:60px;}
+#main ul li {padding-right:23px;}
+#main a {text-decoration:none; color:#FFF; font-family:Arial, Helvetica, sans-serif;}
+#con:hover {color:rgb(255, 190, 27); font-weight:bold;}
+#lo:hover {color:rgb(255, 190, 27); font-weight:bold;}
+#hom:hover {color: rgb(255, 190, 27); font-weight:bold;}
+#main input[type=search] {float:right; padding:6px; border:none; margin-top:15px; margin-right:56px;font-size:17px; width:400px; height:35px; border-radius:5px;}
+#con {font-weight:bolder;}
+#lo {font-weight:bolder;}
+#hom {font-weight:bolder;}
+#sin {font-weight:bolder;}
+#main input[type=search]:hover {box-shadow:1px 1px 1px 1px rgb(255, 190, 27);} 
+#mainn {width:auto; height:auto;}
+/*<!--body {background-color: beige;}-->*/
+
+   
+#icon{background-color:rgb(255, 190, 27); cursor:pointer; float:right; margin-left:100px; position: relative; left: 488.5px; top: 15px; height:35px; text-align:center; width:38px; border-radius: 5px;
+position:absolute;}
+   
+#sin {border:5px solid; background-color: rgb(255, 190, 27); border-radius:3px; border-color:rgb(255, 190, 27); font-weight:bolder;}
+
+
+
+* {margin: 0; box-sizing: border-box; }
+
+/*body {display: flex; height: 100vh; justify-content: center; align-items: center; padding:15px; }*/
+
+.container {max-width: 700px; width: 100%; background-color: black; padding: 25px 30px; border-radius: 5px; margin-top:100px; margin-left:auto; margin-right:auto; height:630px; margin-bottom:35px;}
+
+/* .title {font-size: 25px; font-weight: 500; position:; color: rgb(255, 190, 27); font-style: italic; background-color: salmon; width: 300px;}
+
+.title::before {position: relative; height: 3px; width: 30px; content: ''; left: 0; bottom: 0;} */
+
+.container form .user-details {display: flex; flex-wrap: wrap; justify-content: space-between; margin: 20px 0 12px 0; margin-top: 20px;}
+
+form .user-details .input-box {width: calc(100% / 2 - 20px); margin-bottom: 15px;}
+
+.user-details .input-box input {height: 45px; width: 100%; outline: none; border-radius: 5px; border: 1px solid; padding-left: 15px; font-size: 16px; border-bottom-width: 2px;background-color: white;} 
+
+.user-details .input-box .details {font-weight: 500; margin-bottom: 5px; display: block;}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{box-shadow:rgb(255, 190, 27) 1px 1px 1px 1px;}
+
+form .gender-details .gender-title {font-size: 20px; font-weight: 500; }
+
+form .gender-details .category{display: flex; width: 46.1%; justify-content: space-between; margin: 5px 0;}
+
+.gender-details .category label {display: flex; align-items: center;}
+
+
+.gender-details .category .dot {height: 18px; width: 18px; border-radius: 50%; margin-right: 5px; background:; border: 5px solid transparent;border: solid 1px #000;}
+
+
+#dot-1:checked ~ .category label .one,
+#dot-2:checked ~ .category label .two,
+#dot-3:checked ~ .category label .three {background: rgb(255, 190, 27);}
+
+form input[type="radio"] {display: none;}
+
+form .button {height: 45px; margin: 45px 0;}
+
+form .button input {height: 100%; width: 100%; outline: none; color: black; background: rgb(255, 190, 27)  ; border: 1px solid black; font-size: 18px; font-weight: 500; letter-spacing: 1px; border-radius: 8px; font-weight: bold; font-style: italic; }
+
+form .button input:hover {background: rgb(255, 222, 35); border: 2px solid whitesmoke; cursor: pointer;}
+
+@media (max-width:584px) {.container{max-width: 100%;} form .user-details .input-box {width: 100%; margin-bottom: 15px;} form .gender-details .category{width: 100%;} .container form .user-details{max-height: 300px; overflow-y: scroll;} .user-details::-webkit-scrollbar{width: 0;} }
+
+
+/*.gender-title {border: solid 1px #000;}*/
+
+
+#laa {border: solid 2px #FFFFFF; padding-left:10px; padding-right:10px; padding-top:5px; padding-bottom:5px; border-radius:5px; outline:non; outline: none; border-radius: 5px; border: 1px solid #000;  font-size: 16px; border-bottom-width: 2px; background-color: white;}
+
+#laaa {border: solid 2px #FFFFFF; padding-left:10px; padding-right:10px; padding-top:5px; padding-bottom:5px; border-radius:5px; outline:non; outline: none; border-radius: 5px; border: 1px solid #000;  font-size: 16px; border-bottom-width: 2px; background-color: white;}
+
+#laal {border: solid 2px #FFFFFF; padding-left:10px; padding-right:10px; padding-top:5px; padding-bottom:5px; border-radius:5px; outline:non; outline: none; border-radius: 5px; border: 1px solid #000;  font-size: 16px; border-bottom-width: 2px; background-color: white;}
+
+.birth {position:absolute; left: 52%; top: 82%; margin-top: 36.5px;}
+
+.gender-details {width:299px;}
+#laa {margin-left:1px;}
+#laaa {margin-left:13px;}
+#laal {margin-left:13px;}
+
+#se { width: 98px; height: 33px; margin-top: 10px; padding-left:10px; padding-right:10px;  border-radius:5px; outline: none; border-radius: 5px; border: 1px solid #000;  font-size: 16px; border-bottom-width: 2px; font-style: italic;}
+
+
+#see { width: 121.5px; height: 33px; margin-top: 10px; padding-left:10px; padding-right:10px;  border-radius:5px; outline: none; border-radius: 5px; border: 1px solid #000;  font-size: 16px; border-bottom-width: 2px; font-style: italic;}
+
+
+
+#seen { width: 68px; height: 33px; margin-top: 10px; padding-left:10px; padding-right:10px;  border-radius:5px; outline: none; border-radius: 5px; border: 1px solid #000;  font-size: 16px; border-bottom-width: 2px; font-style: italic;}
+
+#laa:hover {box-shadow: rgb(255, 190, 27) 1px 1px 1px 1px;}
+#laaa:hover {box-shadow: rgb(255, 190, 27) 1px 1px 1px 1px;}
+#laal:hover {box-shadow: rgb(255, 190, 27) 1px 1px 1px 1px;}
+#see:hover {box-shadow: rgb(255, 190, 27) 1px 1px 1px 1px;}
+#seen:hover {box-shadow: rgb(255, 190, 27) 1px 1px 1px 1px;}
+#se:hover {box-shadow: rgb(255, 190, 27) 1px 1px 1px 1px;}
+
+
+.details {color: rgb(255, 190, 27);}
+.gender-title {color: rgb(255, 190, 27);}
+.dat {color: rgb(255, 190, 27);}
+
+
+.input-box ::placeholder {font-style: italic;}
+
+.tht {width: 90px; height: 90px; margin-bottom: 20px;}  
+
+.container:hover {box-shadow: rgb(255, 190, 27) 1px 1px 1px 1px;}
+
+/* .mem {color: rgb(255, 190, 27); width: 250px; background-color: salmon; margin-left: 340px; font-size: 20px; position: ;}
+
+.title {width: 260px;} */
+
+.title
+{
+ width: 300px;
+  padding-right: 80px;
+  color: rgb(255, 190, 27);
+  font-size: 25px;
+  margin-bottom: 20px;
+  
+}
+.mem
+{
+  width: 700px;
+  padding-top: 50px;
+  padding-left: 60px;
+  color: rgb(255, 190, 27);
+ margin-left: 30px;
+ font-size: 16px;
+}
+
+.logen a {text-decoration:none; color: rgb(18, 190, 190); margin-bottom: 30px;}
+
+
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+/* body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+} */
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.footer{
+	max-width: 1170px;
+	margin:auto; width:1007.4px; height:260px;
+}
+.footer{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: black;
+    padding: 70px 0; 
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px; 
+}
+.footer-col h4{
+	font-size: 18px;
+	color:rgb(255, 190, 27);
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color:rgb(255, 190, 27);
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: rgb(255, 190, 27);
+	background-color: #ffffff;
+}
+
+responsive
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+	
+	
+
+
+.social-links a {padding-top: 10px;}
+
+/* .footer:hover {box-shadow: rgb(255, 190, 27) 9px 9px 9px 9px ;} */
+
+
+
+
+  .loader{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #FFF;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; background-image:url(../../../../../Downloads/tht%20lo.png); background-repeat:no-repeat; background-position:center; background-size:120px;
+
+}
+
+/*.disppear{
+
+  animation: vanish 1s forwards;
+  animation-timing-function:linear;
+ 
+}
+@keyframes vanish {
+  100%{
+
+    visibility: hidden;
+  }
+}
+
+#load {width:150px; height:150px;}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+
+.selectnone {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent; 
+}
+
+button{
+/*  width: 150px;
+  height: 50px;*/
+  background: none;
+/*  border: 2px solid ;*/
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .4s;  width:400px;  width: 100%; height: 45px; margin-top: 25px; color:rgb(255, 190, 27); background-color: transparent; border: 1px solid rgb(255, 190, 27); border-radius: 125px; font-weight:bold; font-size:18px; font-style:italic; 
+}
+
+/*button:hover {
+  width: 170px;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.4);
+}*/
+
+.s, svg {
+  position: absolute;
+  color: color: rgb(255, 190, 27);
+  fill: transparent;
+  transition: .4s; 
+}
+
+button:hover {cursor: pointer; background-color: rgb(255, 190, 27); color: white; font-style:italic; }
+
+button:hover span {
+  transition: .4s;
+  font-size: 16px; color: white; text-shadow: 1px 1px 1px white; font-weight:500px;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: none;
+  border: 2px solid transparent;
+  width: 50px;
+  border-left: 2px solid rgb(255, 190, 27);
+  border-bottom: 2px solid rgb(255, 190, 27);
+  animation: spin 2s 500ms forwards;  
+}
+
+button:focus span {
+  color: transparent;
+}
+
+button:focus svg {
+  animation: check 500ms 2300ms forwards;
+}
+
+@keyframes spin {
+  80% {
+    border: 2px solid transparent;
+    border-left: 2px solid rgb(255, 190, 27);
+  }
+  100% {
+    transform: rotate(1080deg);
+    border: 2px solid rgb(255, 190, 27);
+  }
+}
+
+@keyframes check {
+  to {
+    fill: rgb(255, 190, 27);
+  }
+}
+
+@keyframes circle {
+  to {
+    border: 2px solid rgb(255, 190, 27);
+  }
+}
+
+
